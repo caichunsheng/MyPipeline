@@ -33,6 +33,13 @@ namespace HelloTempo
                 Console.WriteLine("FOREACH KEYVALUEPAIR: {0}, {1}", pair.Key, pair.Value);
             }
 
+            var lunch = new Dictionary<string, int>() { { "carrot", 1 }, { "pear", 4 }, { "apple", 6 }, { "kiwi", 3 } };
+            Console.WriteLine("COUNT: " + lunch.Count);
+
+            // Remove pear.
+            lunch.Remove("pear");
+            Console.WriteLine("COUNT: " + lunch.Count);
+
             Console.Read();
         }
     }
